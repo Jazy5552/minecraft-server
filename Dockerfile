@@ -10,7 +10,7 @@ RUN set -x \
   && apt-get update \
   && apt-get install -y --no-install-recommends --no-install-suggests \
     wget vim git \
-  && rm -r /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/*
 
 # Build the spigot server
 RUN set -x \
