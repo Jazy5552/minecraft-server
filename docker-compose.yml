@@ -1,0 +1,22 @@
+version: '3'
+services:
+  server:
+    restart_policy:
+      delay: 10m
+      max_attempts: 10
+    labels:
+      jazy.minecraft.server.description: "Spigot minecraft server"
+    image: jazy5552/minecraft
+    networks:
+      - minecraft
+    volumes:
+      - minecraft-data
+
+networks:
+  minecraft:
+    external:
+      name: "host"
+
+volumes:
+  minecraft-data:
+
