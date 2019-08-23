@@ -3,7 +3,7 @@ services:
   server:
     labels:
       jazy.minecraft.server.description: "Spigot minecraft server"
-    image: jazy5552/minecraft-server
+    image: jazy5552/minecraft-server:latest
     networks:
       - minecraft
     volumes:

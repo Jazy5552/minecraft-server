@@ -1,7 +1,7 @@
 FROM openjdk:11-jre-slim
 MAINTAINER Jazy <jazy@jazyserver.com>
 
-ARG spigot_version="1.14"
+ARG spigot_version="1.14.4"
 
 RUN mkdir /minecraft
 
